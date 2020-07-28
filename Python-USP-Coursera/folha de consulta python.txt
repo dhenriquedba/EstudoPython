@@ -1,0 +1,3 @@
+Folha de consulta Python
+
+https://www.ime.usp.br/~vwsetzer/python-opers-funcoes.html
