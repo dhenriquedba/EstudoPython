@@ -1,8 +1,13 @@
-from Cpf import Cpf
+from cpf_cnpj import Documento
+from validate_docbr import CNPJ
 
-cpf = "22417874857"
-cpf_novo = "11111111111"
-objeto_cpf = Cpf(cpf)
-objeto_novo = Cpf(cpf_novo)
-print(objeto_cpf)
-print(objeto_novo)
+#cpf_um = Cpf("15316264754")
+#print(cpf_um)
+
+#exemplo_cnpj = "35379838000112"
+exemplo_cpf = "22417874857"
+
+#cnpj = CNPJ()
+#print(cnpj.validate(exemplo_cnpj))
+documento = Documento.cria_documento(exemplo_cpf)
+print(documento)
