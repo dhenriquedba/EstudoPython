@@ -2,6 +2,12 @@ from cpf_cnpj import Documento
 from validate_docbr import CNPJ
 from telefonesBR import TelefonesBr
 import re
+from datetime import datetime, timedelta
+from datas_br import DatasBr
+import requests
+from acesso_cep import BuscaEndereco
+
+
 #cpf_um = Cpf("15316264754")
 #print(cpf_um)
 
@@ -21,3 +27,16 @@ telefone_objeto = TelefonesBr(telefone)
 #print(resposta.group())
 
 print(telefone_objeto)
+
+hoje = DatasBr()
+print(hoje.tempo_cadastro())
+
+cep = "25800320"
+objeto_cep = BuscaEndereco(cep)
+
+#r = requests.get("https://viacep.com.br/ws/01001000/json/")
+#print(r.text)
+
+bairro, cidade, uf = objeto_cep.acessa_via_cep()
+
+print(bairro, cidade, uf)
