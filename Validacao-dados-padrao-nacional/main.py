@@ -12,7 +12,7 @@ import re
 #print(cpf_um)
 
 #exemplo_cnpj = "35379838000112"
-exemplo_cpf = "22417874857"
+#exemplo_cpf = "22417874857"
 
 #cnpj = CNPJ()
 #print(cnpj.validate(exemplo_cnpj))
