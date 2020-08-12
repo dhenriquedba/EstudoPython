@@ -1,11 +1,11 @@
 from cpf_cnpj import Documento
 from validate_docbr import CNPJ
 from telefonesBR import TelefonesBr
-import re
 from datetime import datetime, timedelta
 from datas_br import DatasBr
 import requests
 from acesso_cep import BuscaEndereco
+import re
 
 
 #cpf_um = Cpf("15316264754")
